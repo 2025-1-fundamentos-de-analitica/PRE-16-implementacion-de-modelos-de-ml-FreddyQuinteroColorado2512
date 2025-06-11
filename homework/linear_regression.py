@@ -36,5 +36,5 @@ class LinearRegression:
             self.intercept_ -= self.learning_rate * gradient_intercept_
 
     def predict(self, X):
-        """Predict the target for the provided data.""" 
+        """Predict the target for the provided data."""
         return np.matmul(X, self.coefs_) + self.intercept_
